@@ -1,0 +1,25 @@
+eureka:
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+    application:
+      name: provier1803
+    datasource:
+      url: jdbc:mysql://localhost:3306/db_sswd
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+      sql-script-encoding: utf-8
+    http:
+      encoding:
+        charset: utf-8
+        force: true
+        enabled: true
+
+
+server:
+    port: 9222
